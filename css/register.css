@@ -1,0 +1,136 @@
+/* 注册样式 */
+.style_red {
+    color: #c81623
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    height: 82px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+.main_hd {
+    height: 42px;
+    margin-top: 20px;
+    padding: 0 10px;
+    border: 1px solid #dfdfdf;
+    background-color: #ececec;
+    line-height: 42px;
+}
+
+.register {
+    float: left;
+    font-size: 18px;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+
+.main_bd {
+    border: 1px solid #ececec;
+}
+.main_bd_box {
+    width: 560px;
+    height: 374px;
+    margin: 40px auto;
+}
+
+.main_bd_box label {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    text-align: right;
+    line-height: 36px;
+}
+
+.main_bd_box .inp {
+    width: 239px;
+    height: 36px;
+}
+.error {
+    color: #df3033;
+    margin-left: 5px;
+}
+.error_ico {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    background: url("../img/error_ico.png");
+    vertical-align: middle;
+}
+
+.main_bd_box li {
+    margin-bottom: 20px;
+}
+
+.safe {
+    margin-top: -10px;
+    padding-left: 187px;
+}
+
+.safe em {
+    padding: 0 10px;
+    color: #fff;
+}
+
+.weak {
+    background-color: #de1111;
+}
+
+.middle {
+    background-color: #40b83f;
+}
+
+.strong {
+    background-color: #f79100;
+}
+
+.agree {
+    padding-left: 100px;
+}
+
+.agree input {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.finish {
+    width: 200px;
+    height: 34px;
+    margin-top: 30px;
+    margin-left: 120px;
+    background-color: #c81623;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.links {
+    margin-bottom: 10px;
+}
+
+.links a {
+    padding: 0 15px;
+}
+
+.copyright {
+    line-height: 20px;
+}

@@ -1,0 +1,313 @@
+/*公共样式*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/*版心*/
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?3a2xdr');
+	src: url('../fonts/icomoon.eot?3a2xdr#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3a2xdr') format('truetype'), url('../fonts/icomoon.woff?3a2xdr') format('woff'), url('../fonts/icomoon.svg?3a2xdr#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.style_red {
+	color: #c81623;
+}
+
+/* shortcut模块 */
+.shortcut {
+	height: 31px;
+	line-height: 31px;
+	background-color: #f1f1f1;
+}
+.shortcut li {
+	float: left;
+}
+
+.spacer {
+	width: 1px;
+	height: 12px;
+	margin: 9px 12px 0;
+	background-color: #666;
+}
+
+.ico::after {
+	content: '\ea51';
+	font-family: icomoon;
+	margin-left: 5px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+/* header模块 */
+.header {
+	position: relative;
+	height: 106px;
+}
+
+.log {
+	padding-top: 27px;
+}
+
+.log a {
+	display: inline-block;
+	overflow: hidden;
+	width: 175px;
+	height: 56px;
+	background: url("../images/logo.png");
+	text-indent: -99999px;
+}
+.search {
+	position: absolute;
+	top: 27px;
+	left: 349px;
+}
+
+.search .inp {
+	float: left;
+	width: 454px;
+	height: 35px;
+	padding-left: 10px;
+	border: 2px solid #b1191a;
+}
+
+
+.search .btn {
+	float: left;
+	width: 83px;
+	height: 35px;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	background-color: #b1191a;
+}
+
+.shopcar {
+	position: absolute;
+	top: 27px;
+	left: 997px;
+	width: 138px;
+	height: 34px;
+	border: 1px solid #dfdfdf;
+	text-align: center;
+	line-height: 34px;
+	background-color: #f7f7f7;
+}
+
+.shopcar .ico {
+	width: 18px;
+	height: 14px;
+	background-color: pink;
+	background: url("../images/icons.png") no-repeat -416px -88px;
+}
+
+.shopcar a {
+	margin-left: 5px;
+}
+
+.shopcar a::after {
+	content: '\ea52';
+	font-family: icomoon;
+}
+
+.count {
+	position: absolute;
+	top: -5px;
+	left: 104px;
+	height: 14px;
+	padding: 0 5px;
+	line-height: 14px;
+	color: #fff;
+	background-color: #e60012;
+	border-radius: 7px 7px 7px 0;
+}
+
+.hotwords {
+	position: absolute;
+	top: 70px;
+	left: 360px;
+}
+
+.hotwords ul li {
+	float: left;
+}
+
+.hotwords ul li a {
+	padding: 0 10px;
+}
+
+/* nav模块 */
+.nav {
+	height: 45px;
+	border-bottom: 2px solid #b1191a;
+}
+.dropdown {
+	float: left;
+	width: 210px;
+	height: 45px;
+}
+.dropdown dt {
+	width: 210px;
+	height: 45px;
+	background-color: #b1191a;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 46px;
+}
+.dropdown dd {
+	height: 465px;
+	background-color: #c81623;
+}
+
+.dropdown li {
+	width: 210px;
+	height: 30px;
+	margin-left: 1px;
+	padding-left: 10px;
+	line-height: 30px;
+}
+
+.dropdown dd ul li:hover a {
+	color: #c81623;
+}
+
+.dropdown dd ul li:hover {
+	background-color: #fff;
+}
+.dropdown li a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.dropdown li a::after {
+	float: right;
+	content: '\ea52';
+	font-family: icomoon;
+	margin-right: 10px;
+}
+.navitems {
+	float: left;
+	margin-left: 20px;
+}
+
+.navitems li {
+	float: left;
+}
+
+.navitems li a {
+	width: 50px;
+	height: 45px;
+	padding: 0 25px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 16px;
+}
+
+
+/* footer模块 */
+.footer {
+	height: 417px;
+	background-color: #f5f5f5;
+}
+
+.mod_service {
+	height: 110px;
+	padding-top: 30px;
+	padding-left: 30px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.mod_service ul {
+	width: 1230px;
+	
+}
+.mod_service li {
+	float: left;
+	width: 240px;
+	height: 79px;
+}
+
+.zp h5 {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.mod_service_ico {
+	float: left;
+	width: 49px;
+	height: 49px;
+	margin-right: 7px;
+	background-image: url("../images/icons.png");
+}
+
+.zp_ico {
+	background-position: -253px -3px;
+}
+
+.js_ico {
+	background-position: -255px -54px;
+}
+
+.wy_ico {
+	background-position: -257px -106px;
+}
+
+.ts_ico {
+	background-position:-258px -157px;
+}
+
+.bz_ico {
+	background-position: -257px -209px;
+}
+
+.mod_help {
+	height: 187px;
+	padding-top: 20px;
+	padding-left: 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+ .mod_help_item {
+	width: 190px;
+	float: left;
+}
+
+.mod_help dt {
+	font-size: 16px;
+	margin-bottom: 8px;
+} 
+.mod_help dd {
+	height: 22px;
+}
+.mod_help_app dt,
+.mod_help_app p {
+	padding-left: 10px;
+}
+.mod_help_app img {
+	margin-bottom: 5px;
+}
+
+.mod_copyright {
+	text-align: center;
+}
+.links {
+	margin: 20px 0 15px 0;
+}
+
+.links a {
+	padding: 0 15px;
+}

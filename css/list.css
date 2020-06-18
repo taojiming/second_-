@@ -1,0 +1,104 @@
+/* 分类样式 */
+
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    width: 72px;
+    height: 32px;
+    border-left: 1px solid #b1191a;
+    padding-left: 14px;
+    padding-top: 3px;
+}
+
+.sk_list li {
+    float: left;
+    line-height: 45px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sk_con li {
+    float: left;
+    line-height: 45px;
+    padding: 0 22px;
+    font-size: 14px;
+}
+.sk_con .current::after {
+    content: '\ea51';
+    font-family: icomoon;
+}
+
+/* list模块 */
+.list {
+    width: 100%;
+    margin: 25px 0;
+}
+.list_item {
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 461px;
+    margin: 5px 5px;
+    border: 1px solid transparent;
+}
+.list_item:hover {
+    border-color: #e12228;
+}
+.list_item_info {
+    padding: 0 12px;
+}
+.list_item .title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.list_item .price {
+    color: #b1191a;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.list_item .delete {
+    color: #a4a4a4;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.progress_bar {
+    display: inline-block;
+    width: 132px;
+    height: 12px;
+    margin-right: 5px;
+    border: 1px solid #e12228;
+    border-radius: 5px;
+}
+
+.progress_bar_in {
+    width: 87%;
+    height: 10px;
+    background-color: #ed282e;
+}
+
+.sk_goods_progress {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.sk_goods_progress em {
+    color: #e12228
+}
+.purchase {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #b1191a;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
