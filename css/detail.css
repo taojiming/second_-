@@ -19,11 +19,42 @@
 }
 
 .preview_img {
+    position: relative;
     width: 402px;
     height: 402px;
     border: 1px solid #ccc;
 }
 
+/* 遮罩层 */
+.mask {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: yellow;
+    opacity: 0.5;
+    cursor: move;
+}
+.big {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: 500px;
+    height: 500px;
+    z-index: 999;
+    border: 1px solid #ccc;
+    background-color: pink;
+    overflow: hidden;
+}
+.big img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .preview_list {
     position: relative;
     height: 60px;

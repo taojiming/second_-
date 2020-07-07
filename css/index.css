@@ -10,13 +10,24 @@
 .focus {
     position: relative;
     float: left;
-    width: 719px;
+    width: 721px;
     height: 455px;
     background: url("../img/index_bg.png") no-repeat;
+    overflow: hidden;
+}
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+.focus ul li {
+    float: left;
 }
 .arrow_l,
 .arrow_r {
     position: absolute;
+    display: none;
     top: 50%;
     width: 24px;
     height: 40px;
@@ -27,6 +38,7 @@
     color: #fff;
     font-family: icomoon;
     font-size: 18px;
+    z-index: 2;
 }
 
 .arrow_r {
