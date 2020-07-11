@@ -59,6 +59,10 @@
     color: #df3033;
     margin-left: 5px;
 }
+.success {
+    color: #40b83f;
+    margin-left: 5px;
+}
 .error_ico {
     display: inline-block;
     width: 20px;
