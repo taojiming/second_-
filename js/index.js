@@ -101,3 +101,65 @@ window.addEventListener('load',function() {
     }
 
 })
+
+// jQuery显示隐藏电梯导航 
+// 当我们点击了小li 此时不需要执行 页面滚动事件里面的小li 的背景选择 添加current
+// 解决方法： 节流阀 互斥锁
+$(function() {
+    var flag = true;
+    var toolTop = $('.recommend').offset().top;
+    var jiadianTop = $('.jiadian').offset().top;
+    var shoujiTop = $('.shouji').offset().top;
+    var diannaoTop = $('.diannao').offset().top;
+    // console.log(postop);
+    // console.log($('html,body').scrollTop());
+    toggleTool();
+    // 显示侧边栏函数
+    function toggleTool() {
+        if ($('html,body').scrollTop() >= toolTop) {
+            $('.fixedtool').fadeIn();
+        } else {
+            $('.fixedtool').fadeOut();
+        }
+    }
+    
+    $(window).scroll(function() {
+        toggleTool();
+        if(flag){
+            $('.jiadian,.shouji,.diannao').each(function (i, ele) {
+                // console.log($(ele).offset().top);
+                if ($('html,body').scrollTop() >= $(ele).offset().top) {
+                    $('.fixedtool li').eq(i).addClass('current').siblings().removeClass('current');
+                }
+            })
+        }
+    })
+    $('.fixedtool li').eq(0).click(function() {
+        flag = false;
+        $('html,body').stop().animate({
+            scrollTop: jiadianTop
+        }, function () {
+            flag = true;
+        })
+        $(this).addClass('current').siblings().removeClass('current');
+    })
+    $('.fixedtool li').eq(1).click(function () {
+        flag = false;
+        $('html,body').stop().animate({
+            scrollTop: shoujiTop
+        }, function () {
+            flag = true;
+        })
+        $(this).addClass('current').siblings().removeClass('current');
+    })
+    $('.fixedtool li').eq(2).click(function () {
+        flag = false;
+        $('html,body').stop().animate({
+            scrollTop: diannaoTop
+        },function() {
+            flag = true;
+        })
+        $(this).addClass('current').siblings().removeClass('current');
+    })
+})
+
